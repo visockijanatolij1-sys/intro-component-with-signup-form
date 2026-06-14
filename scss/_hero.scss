@@ -72,6 +72,9 @@
     padding: 34px;
     box-shadow: 0px 5px 2px #c2c0c080;
 }
+.form-group {
+  position: relative;
+}
 .form-input{
     display: block;
     padding: 14px 30px;
@@ -80,6 +83,7 @@
     color: variables.$gray;
     font-weight: 700;
     font-size: 14px;
+    width: 100%;
 }
 .form-input::placeholder{
     font-size: 14px;
@@ -149,6 +153,9 @@
         border-radius: 5px;
         font-weight: 500;
     }
+    .form-input.error{
+        border: 1px solid variables.$red;
+    }
     .form-input::placeholder{
         font-weight: 500;
     }
@@ -160,5 +167,24 @@
     .hero-title{
         font-size: 26px;
     }
-    
+
+}
+
+// =================== error state
+
+.form-input.error{
+    border: 2px solid variables.$red;
+    background-image: url("../image/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 20px 20px;
+    padding-right: 55px;
+}
+
+.error-message {
+    color: hsl(0, 100%, 74%);
+    font-size: 11px;
+    font-style: italic;
+    text-align: right;
+    margin-top: 6px;
 }
