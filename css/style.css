@@ -217,7 +217,12 @@ html, body {
   padding-right: 55px;
 }
 
+.error-message.show {
+  display: block;
+}
+
 .error-message {
+  display: none;
   color: hsl(0, 100%, 74%);
   font-size: 11px;
   font-style: italic;
